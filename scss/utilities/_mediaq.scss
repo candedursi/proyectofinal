@@ -1,0 +1,145 @@
+@mixin size ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@media (min-width:720px){
+    header{
+        .container-index, .container-an ,.container-co ,.container-pr ,.container-ta{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+            font-size: 17px;
+        }
+    }
+    
+    .titulo{
+      font-size: 18px;
+    }
+  
+    .container-an{
+      display: flex;
+      justify-content: center;
+       .texto{
+         width: 50%;
+         text-align: initial;
+         padding: 40px 30px;
+        }
+    }
+  
+    .img-an{
+    @include size (380px, 300px);
+      width: 380px;
+      height: 300px;
+      padding: 5px 30px;
+      margin-top: 60px;
+    }
+  
+    .indicaciones{
+      font-size: 20px;
+      width: 500px;
+      margin-left: 200px;
+    }
+  
+    .container-ta{
+      text-align: center;
+      align-items: center;
+    }
+  
+    .texto-ta{
+      max-width: 850px;
+      font-size: 20px;
+      margin-left: 5%;
+    }
+  
+    .video-ta{
+        @include size (700px, 500px);
+    }
+  
+    .container-co{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contacto{
+      font-size: 13px;
+      background-color: #d8c5c5;
+      border-radius: 10px;
+      margin: 40px 40px 15px 40px;
+      padding: 10px;
+    }
+}
+  
+@media (min-width:1024px){
+    header{
+        nav{
+            font-size: 1.2em;
+            height: 120px;
+            padding-top: 45px;
+        }
+    }
+  
+    .titulo{
+      font-size: 20px;
+    }
+  
+    .container-an{
+        .texto{
+            padding: 120px 30px;
+        }
+    }
+  
+    .img-an{
+      @include size (450px, 400px);
+      padding: 5px 30px;
+      margin-top: 15px;
+    }
+  
+    .indicaciones{
+      margin-left: 400px ;
+    }
+
+    .container-ta{
+      display: flex;
+      flex-direction: column;
+      padding: 45px;
+    }
+  
+    .texto-ta{
+      max-width: 700px;
+      font-size: 18px;
+    }
+  
+    .video-ta{
+      @include size (650px, 350px);
+      padding-top: 15px;
+      margin-left: 50px;
+    }
+  
+    .contacto{
+      font-size: 12px;
+      border-radius: 10px;
+      margin: 20px 40px 15px 40px;
+      padding: 10px;
+    }
+  
+    .formulario{
+      border: 2px solid rgb(212, 175, 175);
+      width: 500px;
+      font-size: 15px;
+      box-shadow: 2px 2px 10px;
+    }
+  
+    .btn-primary{
+      color: #f7f1f1;
+      background-color: #b88888;
+      &:hover{
+         background-color: #e4b1b1;
+        }
+    }
+}

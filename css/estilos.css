@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 720px) {
+  header .container-index, header .container-an, header .container-co, header .container-pr, header .container-ta {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+    font-size: 17px;
+  }
+  .titulo {
+    font-size: 18px;
+  }
+  .container-an {
+    display: flex;
+    justify-content: center;
+  }
+  .container-an .texto {
+    width: 50%;
+    text-align: initial;
+    padding: 40px 30px;
+  }
+  .img-an {
+    width: 380px;
+    height: 300px;
+    width: 380px;
+    height: 300px;
+    padding: 5px 30px;
+    margin-top: 60px;
+  }
+  .indicaciones {
+    font-size: 20px;
+    width: 500px;
+    margin-left: 200px;
+  }
+  .container-ta {
+    text-align: center;
+    align-items: center;
+  }
+  .texto-ta {
+    max-width: 850px;
+    font-size: 20px;
+    margin-left: 5%;
+  }
+  .video-ta {
+    width: 700px;
+    height: 500px;
+  }
+  .container-co {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto {
+    font-size: 13px;
+    background-color: #d8c5c5;
+    border-radius: 10px;
+    margin: 40px 40px 15px 40px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header nav {
+    font-size: 1.2em;
+    height: 120px;
+    padding-top: 45px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .container-an .texto {
+    padding: 120px 30px;
+  }
+  .img-an {
+    width: 450px;
+    height: 400px;
+    padding: 5px 30px;
+    margin-top: 15px;
+  }
+  .indicaciones {
+    margin-left: 400px;
+  }
+  .container-ta {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+  }
+  .texto-ta {
+    max-width: 700px;
+    font-size: 18px;
+  }
+  .video-ta {
+    width: 650px;
+    height: 350px;
+    padding-top: 15px;
+    margin-left: 50px;
+  }
+  .contacto {
+    font-size: 12px;
+    border-radius: 10px;
+    margin: 20px 40px 15px 40px;
+    padding: 10px;
+  }
+  .formulario {
+    border: 2px solid #d4afaf;
+    width: 500px;
+    font-size: 15px;
+    box-shadow: 2px 2px 10px;
+  }
+  .btn-primary {
+    color: #f7f1f1;
+    background-color: #b88888;
+  }
+  .btn-primary:hover {
+    background-color: #e4b1b1;
+  }
+}
+
+body {
+  font-family: Century Gothic;
+  background: linear-gradient(180deg, #020024 0%, #f8f6f6 0%, #f2e7e7 0%, white 43%, white 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #cf9696;
+}
+
+button:hover {
+  background-color: #b88888;
+}
+
+.container-index {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-index header {
+  background-color: #f8f6f6;
+}
+
+.container-index header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: #cf9696;
+  font-size: 2.5em;
+}
+
+.container-index header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 1.2em;
+}
+
+.container-index header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.container-index header a:hover {
+  color: #d69494;
+  transition: all .4s;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(226, 184, 184, 0.5), rgba(243, 230, 230, 0.5)), url("../img/fondosi.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: black;
+  font-size: 40px;
+}
+
+.contactanos {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.titulo {
+  text-align: center;
+  background-color: #ddc2bc;
+  margin: 30px 30px 0 30px;
+  border-radius: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  width: 330px;
+}
+
+.container-an {
+  text-align: center;
+  padding: 20px 12px;
+}
+
+.color-acento {
+  color: #cf9696;
+}
+
+.img-an {
+  width: 300px;
+  margin-top: 40px;
+}
+
+.container-pr {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  transition: transform 0.3 ease-in-out;
+  border: solid 1px #eccdcd;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.img-pr {
+  width: 200px;
+  height: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 60px;
+}
+
+.indicaciones {
+  text-align: center;
+  background-color: #e4b1b1;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 50px 20px 10px 20px;
+}
+
+.container-ta {
+  text-align: center;
+  padding: 50px 25px;
+}
+
+.texto-ta {
+  background-color: #d8e6e1;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.video-ta {
+  width: 350px;
+  height: 300px;
+  padding: 40px;
+}
+
+.container-co {
+  text-align: center;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto {
+  padding: 40px 20px 10px 20px;
+  font-size: 13px;
+}
+
+.palabra-sub {
+  color: #9e5d5d;
+}
+
+.palabra-subhover {
+  color: #c78383;
+}
+
+.formulario {
+  border: 2px solid #d4afaf;
+  width: 400px;
+  font-size: 15px;
+  box-shadow: 2px 2px 10px;
+}
+
+.btn-primary {
+  color: #f7f1f1;
+  background-color: #b88888;
+}
+
+.btn-primary:hover {
+  background-color: #e4b1b1;
+}
+
+.button-co {
+  margin: 50px 20px 0 20px;
+  font-size: 10px;
+}
+
+.button-co:hover {
+  color: #cf9696;
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: #a88787;
+}
+
+footer .container-fo {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer .logoimg {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=estilos.css.map */
