@@ -119,7 +119,7 @@ header a:hover{
   width: 330px;
 }
 
-/*acerca nuestro*/
+
 .container-an{
   text-align: center;
   padding: 20px 12px;
@@ -130,7 +130,7 @@ header a:hover{
   margin-top: 40px;
 }
 
-/*productos*/
+
 .container-pr{
   text-align: center;
   padding: 10px 20px;
@@ -174,7 +174,7 @@ header a:hover{
   margin: 50px 20px 10px 20px;
 }
 
-/*taller*/
+
 .container-ta{
   text-align: center;
   padding: 50px 25px;
@@ -192,7 +192,7 @@ header a:hover{
   padding: 40px;
 }
 
-/*contacto*/
+
 .body-contacto{
   background-image: linear-gradient(  0deg,
   rgba(211, 202, 202, 0.5),
