@@ -145,6 +145,7 @@ button{
     &:hover{
         filter: opacity(0.9);
         transform: scale(1.04);
+        transition: all .9s;
     }
 }
 
@@ -158,6 +159,7 @@ button{
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 60px;
+    margin-left: 60px;
 }
 
 .indicaciones{
@@ -197,6 +199,7 @@ button{
     padding: 40px 20px 10px 20px;
     font-size: 13px;
 }
+
 .palabra-sub{
     color: #9e5d5d;
     &hover{
@@ -206,9 +209,13 @@ button{
 
 .formulario{
     border: 2px solid rgb(212, 175, 175);
-    width: 400px;
+    background-color: #e4cfcf;
     font-size: 15px;
     box-shadow: 2px 2px 10px;
+}
+
+.form-group{
+    margin: 20px;
 }
   
 .btn-primary{
@@ -227,6 +234,11 @@ button{
     }
 }
 
+.instagram{
+    @include size(40px, 40px);
+    margin-top: 5px;
+}
+
 footer{
     p{
         margin: 0;
@@ -241,6 +253,12 @@ footer{
     }
     .logoimg{
         @include size(50px, 50px);
+    }
+}
+
+.footer-con{
+    p{
+        color: $color-etiquetas;
     }
 }
   
